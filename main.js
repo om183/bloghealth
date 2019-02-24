@@ -1,0 +1,144 @@
+$(document).ready(function(){
+    $(".po").hover(function(){
+        $(".po").css("text-decoration","underline")
+    },function(){
+        $(".po").css("text-decoration","none")
+    })
+})
+$(document).ready(function(){
+    $(".po").hover(function(){
+        $(".po").css("color","grey")
+    },function(){
+        $(".po").css("color","black")
+    })
+})
+$(document).ready(function(){
+    $(".mo").hover(function(){
+        $(".mo").css("text-decoration","underline")
+    },function(){
+        $(".mo").css("text-decoration","none")
+    })
+})
+$(document).ready(function(){
+    $(".mo").hover(function(){
+        $(".mo").css("color","rgb(136, 132, 132)")
+    },function(){
+        $(".mo").css("color","rgb(231, 159, 159)")
+    })
+})
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#bt").css("display","block")
+        $("#sh").css("display","none")
+        $("#if").css("display","none")
+        $("#it").css("display","none")
+        $("#sd").css("display","none")
+        $("#wl").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#shn").click(function(){
+        $("#sh").css("display","block")
+        $("#bt").css("display","none")
+        $("#if").css("display","none")
+        $("#it").css("display","none")
+        $("#sd").css("display","none")
+        $("#wl").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#ifn").click(function(){
+        $("#if").css("display","block")
+        $("#sh").css("display","none")
+        $("#bt").css("display","none")
+        $("#it").css("display","none")
+        $("#sd").css("display","none")
+        $("#wl").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#itn").click(function(){
+        $("#it").css("display","block")
+        $("#sh").css("display","none")
+        $("#if").css("display","none")
+        $("#bt").css("display","none")
+        $("#sd").css("display","none")
+        $("#wl").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#sdn").click(function(){
+        $("#sd").css("display","block")
+        $("#sh").css("display","none")
+        $("#if").css("display","none")
+        $("#it").css("display","none")
+        $("#bt").css("display","none")
+        $("#wl").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#wln").click(function(){
+        $("#wl").css("display","block")
+        
+        $("#sh").css("display","none")
+        $("#if").css("display","none")
+        $("#it").css("display","none")
+        $("#sd").css("display","none")
+        $("#bt").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#hwgn").click(function(){
+        $("#hwg").css("display","block")
+        $("#thw").css("display","none")
+        $("#ifw").css("display","none")
+        $("#myh").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#thwn").click(function(){
+        $("#hwg").css("display","none")
+        $("#thw").css("display","block")
+        $("#ifw").css("display","none")
+        $("#myh").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#ifwn").click(function(){
+        $("#hwg").css("display","none")
+        $("#thw").css("display","none")
+        $("#ifw").css("display","block")
+        $("#myh").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#myhn").click(function(){
+        $("#hwg").css("display","none")
+        $("#thw").css("display","none")
+        $("#ifw").css("display","none")
+        $("#myh").css("display","block")
+    })
+})
+$(document).ready(function(){
+    $("#phn").click(function(){
+        $("#ph").css("display","block")
+        $("#inf").css("display","none")
+        $("#luf").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#infn").click(function(){
+        $("#ph").css("display","none")
+        $("#inf").css("display","block")
+        $("#luf").css("display","none")
+    })
+})
+$(document).ready(function(){
+    $("#lufn").click(function(){
+        $("#ph").css("display","none")
+        $("#inf").css("display","none")
+        $("#luf").css("display","block")
+    })
+})
+
+  

@@ -1,0 +1,72 @@
+
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 0;
+    
+}
+.po{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    color:black;
+    font-size: 50px;
+}
+.mo{
+    font-family: "Courier New", Courier, monospace;
+    font-stretch: semi-expanded;
+    color: rgb(197, 180, 27);
+    font-size: 25px;
+    display: inline;
+}
+.photo{
+    
+
+    width: 50px;
+    height: 50px;
+}
+.text{
+    color: rgb(185, 88, 88);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold
+}
+.sous-text{
+    font-family: arial;
+    font-weight: 600;
+    font-size: 150%;
+    
+}
+.icons{
+    font-size: 150%;
+    color: rgb(120, 175, 157);
+}    
+.icons:hover{
+color: rgb(156, 154, 154)
+}
+.texting{
+    color: rgb(185, 88, 88);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+a:hover {
+    background-color: transparent !important ;
+}
+.navbar{
+    cursor: pointer;
+    position: fixed;
+    width: 83%
+}
+.body{
+    background-repeat:repeat-y;
+    background-attachment: fixed;
+    background-size: cover
+}
+.alert{
+    text-align: center; padding:10px; background:#79c879; 
+    color:#fff; margin-bottom:10px; display:none;
+  }
+.imgs{
+    text-align: center;
+
+}

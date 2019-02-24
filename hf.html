@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="health-care-fit-tips-fitness-teens-excercices-gym-diet-easy-fast-healthstyle-pretty-body-lose-weight-plan-food-healthy-program">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Healthy Food</title>
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAH3M6p23BOXETfq35WXP1IFH3iRcx8F9w",
+          authDomain: "projet-gmc-2343e.firebaseapp.com",
+          databaseURL: "https://projet-gmc-2343e.firebaseio.com",
+          projectId: "projet-gmc-2343e",
+          storageBucket: "",
+          messagingSenderId: "54489070355"
+        };
+        firebase.initializeApp(config);
+      </script>
+</head>
+
+<body class="body" background="background-2687925_960_720.jpg">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed">
+                <a class="navbar-brand" href="index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown ">
+                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Exercise<span class="sr-only"></span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="ex.html#athome">At Home</a>
+                        <a class="dropdown-item" href="ex.html#atthegym">At The Gym</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="hf.html">HealthyFood</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Smoothies
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="smo.html#lose">To Lose Weight</a>
+                        <a class="dropdown-item" href="smo.html#gain">To gain Weight</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="dc.html">30DaysChallenge</a>  
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tips.html">Tips</a>  
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cu.html">Contact Us</a>
+                      </li>
+                  </ul>
+                  </div>
+                  </nav>
+                <br><br><br>
+
+        <h1 class="text">How To Start A Healthy Diet</h1>
+        <div class="texto">
+            <p class="sous-text">Many people want to start eating healthier and follow a more nutritious diet. When
+                you're diet contains a lot of overly processed foods, high-fat foods or foods high in sugar, you
+                increase your risk for a variety of chronic health conditions. On the other hand, a nutritious,
+                well-balanced diet can support your immune system, healthy development, and decrease your risk for
+                obesity, diabetes and high blood pressure. Make small changes to your diet over the course of a few
+                weeks as opposed to many drastic changes at once, and you'll be able to sustain a healthier way of
+                eating and enjoy the health benefits of a healthy diet.</p>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                        <a class="navbar-brand"  id="phn" >Planning a healthy diet</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item  ">
+                                 <a class="nav-link"  id="infn"  >Including nutritious food</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="lufn" >Limiting unhealthy food</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                      <div id="ph">
+                <h3 style="color:rgb(141, 106, 173);text-align:left;text-decoration: underline">Planning a healthy diet:</h3>
+            <img src="Screen-shot-2011-11-28-at-9.44.19-AM.png" class="img-fluid" alt="Responsive image" style="float:right">
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">1-Set a goal for
+                yourself:</h4>
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">Starting a healthier diet is a
+                great overarching goal; however, to make your goal more realistic and doable, you'll need to be more
+                specific about what you want out of a<strong>"healthy diet"</strong></p>
+            <ol style="text-align:left">
+                <li>It might be helpful to first think about your current<mark>diet</mark> . What's<mark>unhealthy</mark>
+                    about it? Do you need to <mark>eat</mark> more green vegetables? Do you need to <mark>drink</mark>
+                    more water? Should you snack less?</li>
+                <li>Write up a list of the things you want to change, add or stop about your current <mark>diet</mark>.
+                    Use these ideas to form multiple small goals to help you reach a<mark> healthier diet</mark>.</li>
+                <li>The <mark>best way</mark> to reach any goal is to start with one or two very small changes. Trying
+                    to overhaul your entire<mark> diet</mark> in a few days probably won't work well. Choose something
+                    small to work on each week. You'll be much more <mark>successful long-term</mark>.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">2-Start a food
+                journal:</h4>
+            <img src="How-to-Use-a-Food-Diary-to-Help-Manage-Crohns-Symptoms-and-Flares-1440x810.jpg" class="img-fluid" alt="Responsive image">
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left"> After you've come up with a few<mark>goals</mark>
+                and how you can <mark>achieve</mark> them, consider starting a <strong>food journal</strong>. This will
+                serve as a method to track and evaluate your progress.</p>
+            <ol style="text-align:left">
+                <li>Write all your<mark> goals</mark> in your <mark>food</mark> journal. You can review them as needed
+                    or change them as you continue to make changes to your <mark>diet</mark>.</li>
+                <li>Also <mark>track</mark> all of your <mark>foods</mark> and beverages in your <mark>food journal</mark>.
+                    This will help you physically see what's missing from your<mark> diet</mark> or what you're <mark>eating</mark>
+                    too much of. Make sure to write out each <mark>breakfast, lunch, dinner, snack </mark>(even a few
+                    nibbles) and drinks you consume throughout the day. The more accurate you are, the better resource
+                    this will be.</li>
+                <li>Each week in your <mark>food journal</mark>, write down the change you want to work on. For
+                    example, "This week, I will drink eight glasses of water each day." At the end of the week, go back
+                    over your journal to see if you've completed this<mark> goal</mark>.</li>
+                <li>There are many apps available to download on your smartphone that can help you track <mark>calories</mark>,<mark>
+                        exercise</mark>, and even how much water you drink.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">3-Create a meal
+                plan:</h4>
+            <img src="iStock-917893148-min.jpg" class="img-fluid" alt="Responsive image">
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left"> A <strong>meal plan</strong>is
+                a great tool when you're trying to <mark>follow</mark> any <mark>new diet plan</mark>. These<mark>
+                    plans</mark> are your <mark>guide</mark> and blueprint to your week of <mark>meals and snacks</mark></p>
+            <ol style="text-align:left">
+                <li><mark>Meal plans</mark> can help you stay organized and on track throughout the week.You'll know
+                    exactly what you're going to have and on what day. This way you can go to the <mark>grocery store</mark>
+                    with a <mark>specific list</mark>, only buying what you<mark> plan</mark> to use in your<mark>
+                        meals</mark> for the week. You can also<mark> plan</mark> ahead of time for busy days — for
+                    instance, if you know you'll be very busy and work late on Thursday, make something on Wednesday
+                    that you can<mark> easily</mark> reheat and have for leftovers on Thursday.</li>
+                <li>Also write up the corresponding <mark>grocery list</mark> to your <mark>meal plans</mark>. This
+                    will help you get in and out of the grocery store and ensure you have all the <mark>necessary
+                        ingredients</mark> <mark>at home</mark> to make all of your <mark>meals</mark>.</li>
+                <li>Don't skip meals. If you currently <mark>skip meals</mark>, make sure to schedule a meal or a
+                    healthy snack for yourself at least every four hours. Skipping meals is more likely to lead to
+                    binge <mark>eating</mark> later, which contributes to<mark> weight gain</mark>.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">4-Meal prep in
+                your free time:</h4>
+            <img src="meal-prep.jpg" class="img-fluid" alt="Responsive image">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">If you're busy and have little
+                time to<strong> make a meal</strong> from scratch, meal prep will be<mark> the key</mark> to following
+                your new<mark> healthier diet</mark>.</p>
+            <ol style="text-align:left">
+                <li><mark>Meal prep</mark> helps you get a lot of the work of <mark>cooking</mark> from scratch or<mark>
+                        cooking at home</mark> out of the way during<mark> free time</mark>. When it's time for <mark>dinner</mark>
+                    on a busy weeknight, you should have most or even all of the cooking already done.</li>
+                <li><mark>Plan</mark> a day or two during the week when you have some free time to do your<mark> meal
+                        prep</mark>. Review your <mark>meal plan</mark> and grocery list and try to find ways to get
+                    some cooking done.</li>
+                <li><mark>Meal</mark> prep is flexible. You can<mark> cook </mark>full dinners in advance so you just
+                    have to reheat the night you want to <mark>eat</mark> it, or you can just do washing or chopping of<mark>
+                        vegetables </mark>or marinating <mark>meat</mark> so you can<mark>quickly cook</mark> the night
+                    of.</li>
+                <li>Also consider purchasing <mark>foods</mark> that require less prep work to begin with. For example,
+                    you can purchase pre-washed and cut bagged lettuce instead of a whole head of lettuce, frozen <mark>vegetables</mark>
+                    that are heat and serve, or <mark>pre-grilled lean protein</mark> like <mark>grilled chicken strips</mark>.</li>
+                <li><mark>Meal prepping</mark> can be a time to catch up with people. Ask your partner or children to
+                    help you prep while you talk about what has been going on in your lives.</li>
+            </ol>
+                      </div>
+                      <div id="inf">
+            <h3 style="color:rgb(141, 106, 173);text-align:left;text-decoration: underline">Including nutritious foods:</h3>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">1-Go for a
+                <strong>well-balanced diet</strong></h4>
+                <img src="Balanced-Diet_t715.jpg" class="img-fluid" alt="Responsive image">
+
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left"> Although there are a variety of<mark>
+                    eating styles</mark> and <mark>diet plans</mark> to follow, the most<mark> nutritious</mark> is a
+                <strong>well-balanced diet</strong>.</p>
+            <ol style="text-align:left">
+                <li><mark>A balanced diet</mark> will be different for everyone. You'll need to eat the right portion
+                    sizes for your age, gender and activity level</li>
+                <li>In addition, a <mark>well-balanced</mark> diet is one that features foods from each food group each
+                    day. Although many <mark>diets</mark> suggest giving up gluten, or giving up carbs or even avoiding
+                    dairy, all <mark>food</mark> groups offer beneficial<mark> nutrition</mark> to everyone. Only avoid
+                    <mark>food groups</mark> if you have an allergy to those foods.</li>
+                <li>Also make sure you have a wide variety of <mark>food</mark> in your<mark> diet</mark>. For example,
+                    don't always choose to<mark> eat </mark>an apple as your afternoon snack. Alternate between apples,
+                    bananas or berries to increase the variety of your <mark>diet</mark></li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">2-Choose lean
+                protein over higher fat protein sources</h4>
+            <img src="shutterstock_723278326-1200x882.jpg" class="img-fluid" alt="Responsive image" style="width:40%;float: right;">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">Protein is an essential nutrient
+                to any <strong>nutritious diet</strong>; however, choosing leaner protein sources is advisable.</p>
+            <ol style="text-align:left">
+                <li>Protein is <mark>essential</mark> for a variety of functions in your body including: providing your
+                    body with<mark> energy</mark>, supporting your lean muscle mass, providing the basis for many
+                    enzymes and hormones and providing structure and <mark>support</mark> for cells.</li>
+                <li>Lean protein sources are lower in fat and <mark>calories</mark> compared to higher fat
+                    proteins.Many high-fat proteins (mostly from animal sources) are higher in saturated fat. Focusing
+                    on leaner protein decreasing your overall intake of these types of <mark>fat</mark></li>
+                <li>To get your recommended amount of protein each day, include one or two servings at each<mark> meal</mark>.
+                    One serving is about 3 – 4 oz or about the size of the palm of your hand</li>
+                <li>Lean protein sources include: poultry, eggs, low-fat dairy, pork, seafood, beans and nuts and lower
+                    fat beef.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">3-Find ways to
+                include five to nine servings of fruits and vegetables each day:</h4>
+            <img src="iStock-589415708_field_img_hero_988_380.jpg" class="img-fluid" alt="Responsive image">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left"><mark>Fruits and vegetables</mark>
+                are an integral part of a<strong> healthful diet</strong>. These are the <mark>foods</mark> that are
+                abundant in <mark>essential nutrients</mark>.</p>
+            <ol style="text-align:left">
+                <li><mark>Fruits and vegetables</mark> are both fairly low in <mark>calories</mark>, but high in<mark>nutrients</mark>
+                    (making them nutrient-dense foods). They are some of the best sources of fiber, vitamins, mineral
+                    and antioxidants</li>
+                <li>It's typically recommended to <mark>consume</mark> five to nine servings of fruits and vegetables
+                    each day. So measure out 1 cup of vegetables, 2 cups of leafy greens and 1/2 cup of fruit to help
+                    you meet this recommendation.</li>
+                <li>If you don't typically eat a lot of fruits or vegetables now, increasing your intake to five to
+                    nine servings daily can be difficult. Find easy ways to get in a few of these<mark> essential foods</mark>.
+                    Try: mixing in sautéed vegetables into eggs for breakfast, sprinkle yogurt or cottage cheese with
+                    fruit, add extra lettuce, tomatoes and onions to your sandwiches, or try adding some steamed
+                    vegetables to your mac and cheese recipe.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">4-Choose whole
+                grains over refined grains:</h4>
+            <img src="Untitled-design-6-1080x675.jpg" class="img-fluid" alt="Responsive image" style="width:43%;float:right">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">An easy way to increase your
+                <mark>nutrition</mark> and eat a <strong>healthier diet</strong> is by choosing 100% whole grains.
+                These<mark> foods</mark> are much better for you than refined grains.</p>
+            <ol style="text-align:left">
+                <li>100% whole grains have all three parts of the grain — the germ, bran and endosperm. They are less
+                    processed and contain many more nutrients like fiber, protein and minerals.</li>
+                <li>Refined grains are much more processed than whole grains. They are typically stripped of the bran
+                    and germ so they are lower in fiber and protein. Avoid foods made with white flour — like white
+                    pasta, white rice, pastries, chips and crackers.</li>
+                <li>Include a few servings of whole grains each day. Measure out a 1 oz or 1/2 cup serving to help you
+                    stick to appropriate portion sizes.</li>
+                <li>Try whole grains like: quinoa, brown rice, whole wheat pasta, millet, farro or whole wheat bread
+                    and wraps.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">5-Choose healthy
+                sources of fat:</h4>
+            <img src="0615-news-fats_WP.jpg" class="img-fluid" alt="Responsive image" style="width:60%">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">Although fat should be monitored
+                in <strong>your diet</strong>, there are a few types of fat that are particularly healthy and provide a
+                variety of health benefits.</p>
+            <ol style="text-align:left">
+                <li>If you're trying to eat more sources of healthy fats, make sure to swap them out for unhealthy
+                    fats. Do not add more fats — healthy or not — on top of a diet containing unhealthy fats.</li>
+                <li>Omega 3 fats and monounsaturated fats are both great for your body. They have been shown to improve
+                    cardiovascular health and improve cholesterol levels.</li>
+                <li>The best sources of these healthy fats are: avocados, olive oil, olives, nuts, nut butters, canola
+                    oil, chia seeds, flaxseeds and fatty fish (like salmon, tuna and mackerel). Remember, though, that
+                    these may also have a high calorie count, so be moderate.</li>
+                <li>Many health professionals recommended eating fatty fish at least twice a week and including a daily
+                    source of other healthy fats.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">6-Drink adequate
+                fluids:</h4>
+            <img src="PVPV163_Detox-Water-Benefits-Myths_732x549_thumb.jpg" class="img-fluid" alt="Responsive image">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">Although water is not
+                necessarily its own food group or nutrient, it is an essential part of a <strong>healthy diet</strong>
+                and a<strong> healthy body</strong>.</p>
+            <ol style="text-align:left">
+                <li>Drinking adequate water every day helps your body stay hydrated. It's very important to help
+                    regulate body temperature, blood pressure and helps prevent constipation</li>
+                <li>It's typically recommended to consume at least eight 8-oz glasses (2 liters) of water daily.
+                    However, now many health professionals recommend consuming up to 13 glasses (3 liters) daily.</li>
+                <li>In addition to water, you can try flavored water, decaf unsweetened coffee and tea. These beverages
+                    are no calorie and caffeine free which are the best and most hydrating fluids.</li>
+            </ol>
+            </div>
+            <div id="luf">
+            <h3 style="color:rgb(141, 106, 173);text-align:left;text-decoration: underline">Limiting unhealthy food:</h3>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">1-Follow the
+                80/20 rule:</h4>
+            <img src="The-80-20-rule.png" class="img-fluid" alt="Responsive image" style="width:60%;float:right">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left"> Although you want to follow a<strong>
+                    healthier diet</strong>, it's still appropriate to indulge in your favorite foods. Following the
+                80/20 rule can help you stick to a healthy diet while eating more indulgent foods in moderation.</p>
+            <ol style="text-align:left">
+                <li>Although eating a nutritious, well-balanced diet is important, it's not realistic to eat perfectly
+                    healthy everyday for the rest of your life. People derive a lot of enjoyment out of eating and
+                    occasionally eating more indulgent foods.</li>
+                <li>Treat yourself to an indulgent dish, glass of alcohol or larger portions occasionally. This is
+                    still considered normal and healthy eating; however, only indulge 20% of the time. Most of the
+                    time, or 80% of the time, you should be choosing healthy foods.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">2-Limit sources
+                of added and highly processed sugars:</h4>
+            <img src="téléchargement (4).jpg" class="img-fluid" alt="Responsive image" style="width:50%;float:right">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">There are certain groups of
+                foods that you should limit and only eat in moderation. Added sugars are something that should
+                definitely be eaten in moderation as they often no nutritional value.</p>
+            <ol style="text-align:left">
+                <li>Added sugars are added to certain foods during their processing. They offer no nutrition, only
+                    extra calories. In addition, many studies have shown that a diet high in added sugars can lead to
+                    obesity.</li>
+                <li>Added sugars are found in a wide variety of foods. Try to limit items like: breakfast pastries,
+                    cookies, cakes, ice cream, candy, and cereals.</li>
+                <li>Also limit sweetened beverages. Not only are they high in added sugars and calories, many people
+                    don't think to count these types of drinks as a source of calories since they don't fill you up
+                    like food does. You may end up drinking more calories through these beverages.</li>
+                <li>The American Heart Association recommends that women consume no more than 6 teaspoons and men
+                    consume no more than 9 teaspoons of added sugar daily.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">3- Consume
+                limited amounts of alcohol:</h4>
+            <img src="alcohol.jpg" class="img-fluid" alt="Responsive image">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">If you choose to drink, do so in
+                moderation. Moderate amounts of alcohol generally do not pose <strong>health risks</strong> for most
+                people.</p>
+            <ol style="text-align:left">
+                <li>If you drink larger amounts of alcohol (more than three servings daily), you may increase your risk
+                    of: high blood pressure, liver disease, heart disease stroke and depression</li>
+                <li>Unlike some foods, there is a specific definition of moderate alcohol consumption. Women shouldn't
+                    drink more than one serving daily and men should consume no more than two daily.</li>
+                <li>If you do drink, consider skipping mixed beverages that are mixed with sweetened beverages or fruit
+                    juices as these contain extra calories and added sugars.</li>
+                <li>One serving is equivalent to a 12-oz beer, 5 oz of wine, or 1.5 oz of liquor.</li>
+            </ol>
+            <h4 style="text-align:left;font-family: 'Times New Roman', Times, serif;font-weight: 800">4-Limit sources
+                of unhealthy fats:</h4>
+            <img src="téléchargement (5).jpg" class="img-fluid" alt="Responsive image" style="width:50%;float:right">
+            
+            <p style="font-family:Comic Sans MS, cursive, sans-serif;text-align: left">In addition to added sugars, you
+                should also limit certain groups of foods that contain high quantities of fat. In particular you want
+                to avoid higher levels of saturated and trans fat</p>
+            <ol style="text-align:left">
+                <li>There has been some controversy over whether or not saturated fat is as dangerous or unhealthy as
+                    previously thought. However, saturated fat is still a fat which means it's very calorie dense and
+                    if eaten in large quantities can still lead to weight gain and adverse health effects.</li>
+                <li>You don't need to avoid all saturated fats, but do eat them in moderation. Especially foods like:
+                    full fat dairy, fatty cuts of beef or pork, deli meats and other processed meats.</li>
+                <li>Trans fats have been directly linked to several adverse health effects like raising bad cholesterol
+                    levels and lowering the good kind, increases your risk for developing heart disease and stroke and
+                    increases your risk for developing diabetes.Try to avoid these foods as much as possible.</li>
+                <li>Trans fats are found in a variety of foods including: pastries, cookies, cakes, margarines, pies,
+                    fast foods, fried foods and baked goods.</li>
+                <li>There is no safe upper limit for trans fats. These should be avoided if possible</li>
+            </ol>
+        </div>
+        </div>
+        <p style="border-top:black 2px solid"></p><br>
+        <div id="contactForm">
+        <p style="text-align:left;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: larger;text-decoration-line: underline">Leave
+            your feedback:</p>
+        <form >    
+        <textarea style="float: left;width: 100%;"  placeholder="enter your comment..." class="form-control" id="feedback"></textarea>
+    </form>
+        <button id="sendData" onclick="history.go(0)" value="Refresh" type="submit" class="btn btn-lg" style="display:inline-block ;border-radius: 50px;border: none;box-shadow: 0 8px 40px 0 rgba(255,102,92,.45) ;background: linear-gradient(130deg,#ffa634,#ff435b);">Submit</button>
+        <a href="cu.html"><button  type="button" class="btn btn-lg" style="display:inline-block ; border-radius: 50px;box-shadow: 0 8px 40px 0 rgba(255,102,92,.45);border: none; background: linear-gradient(130deg,#ffa634,#ff435b); ">Contact us</button></a>
+        </div>
+        <script>
+            document.getElementById("sendData").addEventListener("click", submitForm)
+        function submitForm(event) {
+            event.preventDefault()
+            var feedback = document.querySelector("#feedback").value;
+            send(feedback);
+            document.getElementById("contactForm").reset();
+        }
+        var GMCh = firebase.database().ref("healthy food")
+        function send(feedback) {
+            var subscriber = GMCh.push()
+            subscriber.set({
+                subscriberMessage:feedback
+            })
+        }
+            </script>
+        <style>
+            a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
+            }
+
+            a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .previous {
+                background-color:  rgb(144, 164, 226);
+                color: white;
+            }
+
+            .next {
+                background-color:  rgb(144, 164, 226);
+                color: white;
+            }
+        </style>
+        <a href="ex.html" class="previous" style="float:left"> << Previous</a> 
+        <a href="smo.html" class="next" style="float: right">Next >></a>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="main.js"></script>
+
+</html>
